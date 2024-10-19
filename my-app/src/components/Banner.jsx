@@ -22,7 +22,7 @@ const Banner = () => {
 
   return (
     <motion.div
-      className="flex bg-[url('/src/assets/assets_frontend/airplane-plane.jpg')] bg-cover bg-center rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10"
+      className="flex bg-[url('/src/assets/assets_frontend/computer-2982270_1920.jpg')] bg-cover bg-center rounded-lg px-6 sm:px-10 md:px-14 lg:px-12 my-20 md:mx-10"
       initial="hidden"
       animate="visible"
     >
@@ -31,16 +31,16 @@ const Banner = () => {
         className="flex-1 py-8 sm:py-10 md:py-16 lg:py-24 lg:pl-5"
         variants={textVariant}
       >
-        <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-white">
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-primary">
           <p>Book Appointment</p>
-          <p>With Safari Nursing Agency</p>
+          <p>With MetaMind Limited</p>
         </div>
         <motion.button
           onClick={() => {
             navigate("/contact");
             scrollTo(0, 0);
           }}
-          className="bg-white text-sm sm:text-base text-gray-600 px-8 py-3 rounded-full mt-6"
+          className="flex items-center gap-2 bg-secondary px-8 py-3 rounded-full text-primary text-sm m-auto md:m-0"
           variants={buttonVariant}
           whileHover="hover"
         >
@@ -53,11 +53,11 @@ const Banner = () => {
         className="hidden md:block md:mw-1/2 lg:w-[370px] relative"
         variants={imageVariant}
       >
-        <img
+        {/* <img
           className="w-full absolute bottom-0 right-0 max-w-md"
           src={assets.appointment_img}
           alt="appointment img"
-        />
+        /> */}
       </motion.div>
     </motion.div>
   );

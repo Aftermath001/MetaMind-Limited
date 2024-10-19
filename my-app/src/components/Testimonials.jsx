@@ -6,7 +6,7 @@ import { assets } from "../assets/assets_frontend/assets";
 
 const Testimonials = () =>  {
   return (
-    <div className="py-16 px-8">
+    <div className="py-16 px-8 bg-primary rounded-lg mt-5">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-semibold text-center text-primary mb-12">
           What Our Clients Say
