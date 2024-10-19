@@ -1,4 +1,4 @@
-import appointment_img from "./appointment_img.png";
+import appointment_img from "./android-3084516_1920-removebg-preview.png";
 import header_img from "./cyber-brain-7633488_1920-removebg-preview.png";
 import group_profiles from "./group_profiles.png";
 import profile_pic from "./profile_pic.png";
