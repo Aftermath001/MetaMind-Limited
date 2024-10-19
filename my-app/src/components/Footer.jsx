@@ -13,10 +13,9 @@ const Footer = () => {
             alt="assets logo"
           />
           <p className="w-full md:w-2/3 text-gray-600 leading-6">
-            Are you a healthcare professional eager to expand your knowledge and
-            qualifications? We provide access to prestigious educational
-            institutions offering programs and scholarships tailored to medical
-            professionals.
+            Metamind is your trusted partner in achieving exceptional growth and
+            efficiency through smart, personalized consulting services. Let us
+            help you transform your business and achieve your full potential.
           </p>
         </div>
 
@@ -43,8 +42,8 @@ const Footer = () => {
         <div>
           <p className="text-xl fornt-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>+254798567828</li>
-            <li>safari.nurse@yahoo.com</li>
+            <li>Tel: (+254) 797 246 096</li>
+            <li>metamind.limited@gmail.com</li>
           </ul>
         </div>
       </div>

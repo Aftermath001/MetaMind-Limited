@@ -8,9 +8,11 @@ const KeyPersonel = () => {
     description: `Alvin Adams is the Director and Co-founder of MetaMind Limited. 
             With years of experience in the industry, he has led the company to new heights. `,
     achievements: [
-      "5+ Years of Experience in the Software Industry",
+      "5+ Years of Experience in the Software Industry -(Fullstack Engineer)",
       "Founded MetaMind in 2024",
       "Over 20+ successful projects completed",
+      "ISO 9001:2015 Quality Management System",
+
     ],
   };
 

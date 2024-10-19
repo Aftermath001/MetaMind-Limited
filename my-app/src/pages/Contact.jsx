@@ -15,15 +15,15 @@ const Contact = () => {
       </motion.div>
 
       <div className='my-10 flex flex-col justify-center md:flex-row gap-10 mb-28 text-sm'>
-        <motion.img className='w-full md:max-w-[360px]' src={assets.contact_image} alt='contact image' whileHover={{ scale: 1.05 }} />
+        <motion.img className='w-full md:max-w-[200px]' src={assets.contact_image} alt='contact image' whileHover={{ scale: 1.05 }} />
 
         <div className='flex flex-col justify-center items-start gap-6'>
           <p className='font-semibold text-lg text-gray-600'>OUR OFFICE</p>
-          <p className='text-gray-500'>Kabarnet, Baringo County</p>
-          <p className='text-gray-500'>Tel: (+254) 798 567 828</p>
+          <p className='text-gray-500'>Kakamega, Kakamega County</p>
+          <p className='text-gray-500'>Tel: (+254) 797 246 096</p>
           <motion.button 
             className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'
-            onClick={() => window.open('https://wa.me/798 567 828', '_blank')}
+            onClick={() => window.open('https://wa.me/797 246 096', '_blank')}
             whileHover={{ scale: 1.1 }}
           >
             WhatsApp Us
