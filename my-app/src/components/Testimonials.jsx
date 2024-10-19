@@ -1,14 +1,14 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper/modules';
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
 import { assets } from "../assets/assets_frontend/assets";
 
-const Testimonials = () =>  {
+const Testimonials = () => {
   return (
     <div className="py-16 px-8 bg-primary rounded-lg mt-5">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-semibold text-center text-primary mb-12">
+        <h2 className="text-3xl font-semibold text-center text-white mb-12">
           What Our Clients Say
         </h2>
 
@@ -24,100 +24,102 @@ const Testimonials = () =>  {
         >
           {/* Slide 1 */}
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <p className="text-lg text-gray-700 mb-4 italic">
-                “Safari Nurse Agency connected me with my dream job abroad, and their support throughout the process was exceptional!”
+            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg shadow-lg">
+              <img
+                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                alt="James Kimani"
+                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
+              />
+              <p className="text-lg mb-4 italic">
+                “Metamind Limited transformed our business! Their IT solutions streamlined our operations and boosted productivity. The team is knowledgeable and responsive, making every interaction smooth. Highly recommend!”
               </p>
-              <div className="flex items-center space-x-4">
-                <div>
-                  <p className="text-primary font-semibold">James Kimani</p>
-                  <p className="text-gray-500 text-sm">Registered Nurse, UK</p>
-                </div>
-              </div>
+              <p className="font-semibold"> Sarah L.</p>
+              <p className="text-sm">Operations Manager</p>
             </div>
           </SwiperSlide>
 
           {/* Slide 2 */}
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <p className="text-lg text-gray-700 mb-4 italic">
-                “The team at Safari Nurse Agency was compassionate, professional, and made the entire recruitment process seamless."”
+            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-green-400 to-green-600 text-white rounded-lg shadow-lg">
+              <img
+                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                alt="Bilhah Cheruiyot"
+                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
+              />
+              <p className="text-lg mb-4 italic">
+                “Working with Metamind Limited has been a game changer for our startup. They provided us with cutting-edge tech solutions that are scalable and reliable. The support team is always available to help us navigate any challenges. Truly a top-notch service!"”
               </p>
-              <div className="flex items-center space-x-4">
-                <div>
-                  <p className="text-primary font-semibold">Bilhah Cheruiyot</p>
-                  <p className="text-gray-500 text-sm">Medical Student, Canada</p>
-                </div>
-              </div>
+              <p className="font-semibold">Mike.T</p>
+              <p className="text-sm">Founder & CEO</p>
             </div>
           </SwiperSlide>
 
           {/* Slide 3 */}
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <p className="text-lg text-gray-700 mb-4 italic">
-                “Thanks to Safari Nurse Agency, I received top-notch training and landed a life-changing opportunity in healthcare.”
+            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-purple-400 to-purple-600 text-white rounded-lg shadow-lg">
+              <img
+                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                alt="Kimutai Emmanuel"
+                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
+              />
+              <p className="text-lg mb-4 italic">
+                “Metamind’s Limited expertise in cybersecurity has given us peace of mind. Their tailored solutions protect our sensitive data and keep us compliant with regulations. The team is professional and attentive to our needs. Couldn't ask for a better partner!”
               </p>
-              <div className="flex items-center space-x-4">
-                <div>
-                  <p className="text-primary font-semibold">Kimutai Emmanuel</p>
-                  <p className="text-gray-500 text-sm">Nurse Practitioner, USA</p>
-                </div>
-              </div>
+              <p className="font-semibold">Emma J.</p>
+              <p className="text-sm">IT Director</p>
             </div>
           </SwiperSlide>
 
           {/* Slide 4 */}
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <p className="text-lg text-gray-700 mb-4 italic">
-                “I’m forever grateful to Safari Nurse Agency for helping me find a job that aligns with my skills and passion for patient care.”
+            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-red-400 to-red-600 text-white rounded-lg shadow-lg">
+              <img
+                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                alt="Agatha Mwikali"
+                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
+              />
+              <p className="text-lg mb-4 italic">
+                “We turned to Metamind Limited for our cloud migration, and it was one of the best decisions we made. They handled everything seamlessly and ensured minimal downtime. The transition was smooth, and our team is now more efficient than ever!”
               </p>
-              <div className="flex items-center space-x-4">
-                <div>
-                  <p className="text-primary font-semibold">Agatha Mwikali</p>
-                  <p className="text-gray-500 text-sm">Pediatrician, Thailand</p>
-                </div>
-              </div>
+              <p className="font-semibold">David K.</p>
+              <p className="text-sm">IT Manager</p>
             </div>
           </SwiperSlide>
 
           {/* Slide 5 */}
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <p className="text-lg text-gray-700 mb-4 italic">
-                “Their commitment to excellence and the well-being of nurses truly sets Safari Nurse Agency apart from the rest.”
+            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-lg shadow-lg">
+              <img
+                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                alt="Jared Ouma"
+                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
+              />
+              <p className="text-lg mb-4 italic">
+                “Metaminde’s customer support is exceptional! They are always quick to respond and provide solutions that fit our unique requirements. Their proactive approach has helped us stay ahead in the ever-evolving tech landscape."”
               </p>
-              <div className="flex items-center space-x-4">
-                <div>
-                  <p className="text-primary font-semibold">Jared Ouma</p>
-                  <p className="text-gray-500 text-sm">General physician, France</p>
-                </div>
-              </div>
+              <p className="font-semibold">Jessica M.</p>
+              <p className="text-sm">Business Analyst</p>
             </div>
           </SwiperSlide>
 
           {/* Slide 6 */}
           <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-lg">
-              <p className="text-lg text-gray-700 mb-4 italic">
-                “I’ve never felt more supported in my career journey—Safari Nurse Agency is the best recruitment agency for healthcare professionals!”
+            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-lg shadow-lg">
+              <img
+                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                alt="Makena Mwanga"
+                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
+              />
+              <p className="text-lg mb-4 italic">
+                “I can't recommend Metaminde enough! Their team designed a custom software solution that perfectly meets our needs. The quality of their work is impressive, and their commitment to client satisfaction is evident. Thank you, Metaminde!”
               </p>
-              <div className="flex items-center space-x-4">
-                <div>
-                  <p className="text-primary font-semibold">Makena Mwanga</p>
-                  <p className="text-gray-500 text-sm">Dermatologist, India</p>
-                </div>
-              </div>
+              <p className="font-semibold"> Alan R.</p>
+              <p className="text-sm">Product Owner</p>
             </div>
           </SwiperSlide>
         </Swiper>
-
-        
-
-        
       </div>
     </div>
   );
-}
-export default Testimonials
+};
+export default Testimonials;
