@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { assets } from "../assets/assets_frontend/assets";
-import KeyPersonel from "../components/KeyPersonel";
 
 const About = () => {
   const containerVariants = {
@@ -19,14 +17,14 @@ const About = () => {
       initial="hidden"
       animate="visible"
       variants={containerVariants}
-      className="bg-tertiary"
+      className="bg-tertiary dark:bg-primary"
     >
       <motion.div
-        className="text-center text-3xl pt-10 text-primary"
+        className="text-center text-3xl pt-10 text-primary dark:text-tertiary"
         variants={itemVariants}
       >
         <p>
-          ABOUT <span className="text-gray-700 font-medium">US</span>
+          ABOUT <span className="text-gray-700 dark:text-gray-400 font-medium">US</span>
         </p>
       </motion.div>
 
@@ -34,9 +32,9 @@ const About = () => {
         className="my-10 flex flex-col md:flex-row gap-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
         variants={itemVariants}
       >
-        <motion.div className="flex flex-col md:flex-row gap-6 md:gap-12 text-sm text-gray-600">
+        <motion.div className="flex flex-col md:flex-row gap-6 md:gap-12 text-sm text-gray-600 dark:text-gray-300">
           <motion.div className="md:w-1/2">
-            <motion.b className="text-gray-800 text-lg">
+            <motion.b className="text-gray-800 dark:text-gray-100 text-lg">
               Company History
             </motion.b>
             <motion.p>
@@ -52,7 +50,7 @@ const About = () => {
           </motion.div>
 
           <motion.div className="md:w-1/2">
-            <motion.b className="text-gray-800 text-lg">
+            <motion.b className="text-gray-800 dark:text-gray-100 text-lg">
               Mission Statement
             </motion.b>
             <motion.p>
@@ -68,10 +66,13 @@ const About = () => {
         </motion.div>
       </motion.div>
 
-      <KeyPersonel />
+      {/* <KeyPersonel /> */}
 
-      <motion.div className="text-xl my-8 text-center" variants={itemVariants}>
-        <p className="font-bold text-primary">WHY CHOOSE US</p>
+      <motion.div
+        className="text-xl my-8 text-center text-primary dark:text-tertiary"
+        variants={itemVariants}
+      >
+        <p className="font-bold">WHY CHOOSE US</p>
       </motion.div>
 
       <motion.div
@@ -82,7 +83,7 @@ const About = () => {
           (value, index) => (
             <motion.div
               key={index}
-              className="border border-gray-300 rounded-lg px-10 py-8 flex flex-col gap-5 text-center text-[15px] hover:bg-primary hover:text-white transition-all duration-300 text-gray-600 cursor-pointer"
+              className="border border-gray-300 dark:border-gray-700 rounded-lg px-10 py-8 flex flex-col gap-5 text-center text-[15px] hover:bg-primary dark:hover:bg-tertiary hover:text-white dark:hover:text-primary transition-all duration-300 text-gray-600 dark:text-gray-300 cursor-pointer"
               variants={itemVariants}
             >
               <b className="text-lg">{value}:</b>

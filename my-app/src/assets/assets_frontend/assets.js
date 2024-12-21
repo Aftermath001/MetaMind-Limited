@@ -60,6 +60,7 @@ export const assets = {
   razorpay_logo,
   director1,
   director2,
+  
 };
 
 export const specialityData = [

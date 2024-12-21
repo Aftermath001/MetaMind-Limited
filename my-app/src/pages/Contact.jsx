@@ -19,7 +19,7 @@ const Contact = () => {
 
         <div className='flex flex-col justify-center items-start gap-6'>
           <p className='font-semibold text-lg text-gray-600'>OUR OFFICE</p>
-          <p className='text-gray-500'>Kakamega, Kakamega County</p>
+          <p className='text-gray-500'>Nairobi, Kenya</p>
           <p className='text-gray-500'>Tel: (+254) 797 246 096</p>
           <motion.button 
             className='border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'

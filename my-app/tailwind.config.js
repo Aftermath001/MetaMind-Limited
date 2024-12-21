@@ -1,19 +1,19 @@
-/** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: 'class', // This enables class-based dark mode
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors:{
-        primary: "#000000",  // Black
+      colors: {
+        primary: "#000000", // Black
         secondary: "#FFD700", // Gold
-        tertiary: "#FFFFFF",  // White
+        tertiary: "#FFFFFF", // White
       },
-      gridTemplateColumns:{
-        'auto':'repeat(auto-fill, minmax(300px, 1fr))'
-      }
+      gridTemplateColumns: {
+        auto: 'repeat(auto-fill, minmax(300px, 1fr))',
+      },
     },
   },
   plugins: [],

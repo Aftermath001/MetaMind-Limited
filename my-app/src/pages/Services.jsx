@@ -106,12 +106,12 @@ const ServicesPage = () => {
   };
 
   return (
-    <div className="py-12 bg-tertiary">
+    <div className="py-12 bg-tertiary dark:bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-primary mb-8">
+        <h2 className="text-3xl font-bold text-center text-primary dark:text-tertiary mb-8">
           Our Services
         </h2>
-        <p className="text-center text-lg text-gray-700 mb-12">
+        <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-12">
           Welcome to Metamind's Services page. We offer a range of specialized consultancy services designed to help your business thrive in today's competitive market. Our expert team provides strategic insights, innovative solutions, and practical guidance tailored to your unique needs. Explore our services below to discover how we can drive your business success.
         </p>
 
@@ -125,40 +125,43 @@ const ServicesPage = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
               variants={itemVariant}
             >
-              <h3 className="text-xl font-semibold mb-3 text-secondary">
+              <h3 className="text-xl font-semibold mb-3 text-secondary dark:text-gold">
                 {service.title}
               </h3>
-              <p className="text-gray-600 mb-4">{service.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">{service.description}</p>
 
-              <h4 className="font-semibold text-secondary">Benefits:</h4>
+              <h4 className="font-semibold text-secondary dark:text-gold">Benefits:</h4>
               <ul className="list-disc list-inside mb-4">
                 {service.benefits.map((benefit, i) => (
-                  <li key={i} className="text-gray-600">{benefit}</li>
+                  <li key={i} className="text-gray-600 dark:text-gray-400">{benefit}</li>
                 ))}
               </ul>
 
-              <h4 className="font-semibold text-secondary">Process:</h4>
+              <h4 className="font-semibold text-secondary dark:text-gold">Process:</h4>
               <ul className="list-disc list-inside mb-4">
                 {service.process.map((step, i) => (
-                  <li key={i} className="text-gray-600">{step}</li>
+                  <li key={i} className="text-gray-600 dark:text-gray-400">{step}</li>
                 ))}
               </ul>
 
-              <h4 className="font-semibold text-secondary">Case Study:</h4>
-              <p className="text-gray-600 mb-1"><strong>Challenge:</strong> {service.caseStudy.challenge}</p>
-              <p className="text-gray-600 mb-1"><strong>Solution:</strong> {service.caseStudy.solution}</p>
-              <p className="text-gray-600"><strong>Result:</strong> {service.caseStudy.result}</p>
+              {/* <h4 className="font-semibold text-secondary dark:text-gold">Case Study:</h4>
+              <p className="text-gray-600 dark:text-gray-400 mb-1"><strong>Challenge:</strong> {service.caseStudy.challenge}</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-1"><strong>Solution:</strong> {service.caseStudy.solution}</p>
+              <p className="text-gray-600 dark:text-gray-400"><strong>Result:</strong> {service.caseStudy.result}</p> */}
             </motion.div>
           ))}
         </motion.div>
 
         <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold text-primary mb-4">Ready to Transform Your Business?</h3>
-          <p className="text-gray-700 mb-6">Contact us today to learn more about how Metamind can help you achieve your goals. Whether you need strategic guidance, technological innovation, financial optimization, or operational efficiency, our team of experts is here to assist you.</p>
-          <a href="mailto:contact@metamind.com" className="bg-secondary text-white px-6 py-3 rounded-md hover:bg-gold transition duration-300">
+          <h3 className="text-2xl font-bold text-primary dark:text-tertiary mb-4">Ready to Transform Your Business?</h3>
+          <p className="text-gray-700 dark:text-gray-300 mb-6">Contact us today to learn more about how Metamind can help you achieve your goals. Whether you need strategic guidance, technological innovation, financial optimization, or operational efficiency, our team of experts is here to assist you.</p>
+          <a
+            href="mailto:contact@metamind.com"
+            className="bg-secondary dark:bg-gold text-white dark:text-primary px-6 py-3 rounded-md hover:bg-gold dark:hover:bg-secondary transition duration-300"
+          >
             Get in Touch
           </a>
         </div>
