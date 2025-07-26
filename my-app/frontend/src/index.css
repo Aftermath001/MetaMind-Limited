@@ -4,6 +4,7 @@
 @tailwind utilities;
 
 
+
 *{
     font-family: Outfit;
 }
@@ -20,5 +21,13 @@
   
   .custom-drop-shadow:hover {
     filter: drop-shadow(1px 10px 15px rgba(250, 113, 33, 0.925));
+  }
+/* In a global CSS file, or directly apply these classes */
+body {
+    @apply bg-tertiary text-primary dark:bg-primary dark:text-tertiary;
+  }
+  
+  .navbar {
+    @apply bg-secondary dark:bg-primary text-primary dark:text-tertiary;
   }
   

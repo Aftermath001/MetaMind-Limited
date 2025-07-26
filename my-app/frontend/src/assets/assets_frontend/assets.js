@@ -5,7 +5,7 @@ import profile_pic from "./profile_pic.png";
 import contact_image from "./android-3084516_1920-removebg-preview.png";
 import backgroundImage1 from '../assets_frontend/airplane-plane.jpg'
 import about_image from "./aboutMed.jpg";
-import logo from "./metamindlogo.png";
+import logo from "./MetaMindLogo.jpeg";
 import dropdown_icon from "./dropdown_icon.svg";
 import menu_icon from "./menu_icon.svg";
 import cross_icon from "./cross_icon.png";
@@ -60,6 +60,7 @@ export const assets = {
   razorpay_logo,
   director1,
   director2,
+  
 };
 
 export const specialityData = [

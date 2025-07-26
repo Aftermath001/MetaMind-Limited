@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 const ServicesPage = () => {
   const services = [
     {
-      title: "Training and Education",
+      title: "Real Estate",
       description:
-        "Offering training programs for nurses to enhance their skills, gain certifications, or prepare for exams like the NCLEX-RN.",
+        "We partner with real estate and construction teams ready to move beyond spreadsheets, delays, and rising costs. Our custom-built solutions streamline project management, cost tracking, and team collaboration—designed to fit your exact workflow.",
     },
     {
-      title: "International Nurse Placement",
+      title: "Healthcare",
       description:
-        "Connecting nurses from countries like Kenya to job opportunities abroad, such as in the U.S., U.K., Canada, or Australia.",
+        "Revolutionize patient care with tailored software and mobile apps. We help healthcare providers elevate patient experiences, simplify operations, and drive better health outcomes through innovative technology.",
     },
     {
-      title: "Local Staffing Solutions",
+      title: "Education",
       description:
-        "Providing local healthcare institutions in Kenya with qualified nurses for short- or long-term assignments.",
+        "Our custom app development empowers modern learning with flexible, accessible solutions. By integrating AI and gamification, we help educators boost engagement, retention, and student success.",
     },
     {
-      title: "Digital Health Integration",
+      title: "Finance & Logistics",
       description:
-        "Incorporating digital health tools or platforms for remote consultations or telemedicine, aligning with global healthcare trends.",
+        "We develop secure, high-performance software for banks and fintech companies worldwide. Our solutions enhance operational efficiency, reliability, and user experience—keeping your business agile and competitive in a dynamic market.Our custom software gives logistics teams complete visibility across operations—from vehicle tracking and inventory scanning to full end-to-end supply chain management. Stay connected, efficient, and in control.",
     },
   ];
 
@@ -49,7 +49,7 @@ const ServicesPage = () => {
     <div className="py-12 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary mb-8">
-          Our Services
+          We Provide IT Services to Various Industries
         </h2>
 
         {/* Container for animated cards */}
