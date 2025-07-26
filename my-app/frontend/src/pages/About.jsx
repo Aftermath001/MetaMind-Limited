@@ -38,9 +38,8 @@ const About = () => {
               Company History
             </motion.b>
             <motion.p>
-              Metamind was founded in 2015 by a group of visionary consultants
-              with a shared passion for innovation and excellence. Over the
-              years, we have grown from a small startup into a renowned
+              Metamind was founded by a group of visionary IT consultants
+              with a shared passion for innovation and excellence.We have grown from a small startup into a 
               consultancy firm, helping businesses across various industries
               navigate complex challenges and achieve sustainable growth. Our
               journey began with a commitment to delivering personalized and

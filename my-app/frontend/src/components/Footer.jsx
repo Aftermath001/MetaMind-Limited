@@ -27,10 +27,10 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about-us">About Us</a>
+              <a href="/about">About Us</a>
             </li>
             <li>
-              <a href="/contact-us">Contact Us</a>
+              <a href="/contact">Contact Us</a>
             </li>
             <li>
               <a href="/privacy-policy">Privacy Policy</a>
@@ -42,8 +42,8 @@ const Footer = () => {
         <div>
           <p className="text-xl fornt-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-2 text-gray-600">
-            <li>Tel: (+254) 797 246 096</li>
-            <li>metamind.limited@gmail.com</li>
+            <li>Tel: (+254) 797 246 096 /(+254) 799 949 392</li>
+            <li>metamindlimited@gmail.com</li>
           </ul>
         </div>
       </div>
