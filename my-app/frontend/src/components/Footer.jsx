@@ -27,7 +27,7 @@ const Footer = () => {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <a href="/about">About MetaMind</a>
             </li>
             <li>
               <a href="/contact">Contact Us</a>
