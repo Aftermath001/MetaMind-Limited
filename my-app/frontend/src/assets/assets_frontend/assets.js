@@ -6,6 +6,11 @@ import contact_image from "./android-3084516_1920-removebg-preview.png";
 import backgroundImage1 from '../assets_frontend/airplane-plane.jpg'
 import about_image from "./aboutMed.jpg";
 import logo from "./MetaMindLogo.jpeg";
+import avatar1 from "./avatar1.jpeg"
+import avatar2 from "./avatar2.png"
+import avatar3 from "./avatar3.jpeg"
+import avatar4 from "./avatar4.jpeg"
+import avatar5 from "./avatar5.png"
 import dropdown_icon from "./dropdown_icon.svg";
 import menu_icon from "./menu_icon.svg";
 import cross_icon from "./cross_icon.png";
@@ -42,6 +47,11 @@ import Pediatricians from "./Pediatricians.svg";
 
 export const assets = {
   appointment_img,
+  avatar1,
+  avatar2,
+  avatar3,
+  avatar4,
+  avatar5,
   header_img,
   group_profiles,
   logo,
