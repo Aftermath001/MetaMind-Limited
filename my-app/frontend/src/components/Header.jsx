@@ -1,6 +1,8 @@
 import React from 'react';
 import { assets } from '../assets/assets_frontend/assets';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
   // Animation Variants
@@ -37,14 +39,15 @@ const Header = () => {
             At Metamind, we are dedicated to helping businesses navigate complex challenges and achieve sustainable growth through personalized and impactful solutions.
           </p>
         </motion.div>
-        <motion.a 
-          className='flex items-center gap-2 bg-secondary px-8 py-3 rounded-full text-primary text-sm m-auto md:m-0'
-          href='/contact'
-          whileHover="hover"
-          variants={buttonVariant}
-        >
-          Book Appointment <img className='w-3' src={assets.arrow_icon} alt='arrow-icon'/>
-        </motion.a>
+        <motion.div
+  className='flex items-center gap-2 bg-secondary px-8 py-3 rounded-full text-primary text-sm m-auto md:m-0'
+  whileHover="hover"
+  variants={buttonVariant}
+>
+  <Link to="/contact" className="flex items-center gap-2">
+    Book Appointment <img className='w-3' src={assets.arrow_icon} alt='arrow-icon'/>
+  </Link>
+        </motion.div>
       </motion.div>
 
       {/* Right Side */}
