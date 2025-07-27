@@ -26,15 +26,15 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-gradient-to-r from-blue-400 to-blue-600 text-white rounded-lg shadow-lg">
               <img
-                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                src={assets.avatar1}
                 alt="James Kimani"
                 className="w-24 h-24 rounded-full mb-4 border-4 border-white"
               />
               <p className="text-lg mb-4 italic">
                 “Metamind Limited transformed our business! Their IT solutions streamlined our operations and boosted productivity. The team is knowledgeable and responsive, making every interaction smooth. Highly recommend!”
               </p>
-              <p className="font-semibold"> Sarah L.</p>
-              <p className="text-sm">Operations Manager</p>
+              <p className="font-semibold"> Henryco Shikanda</p>
+              <p className="text-sm">CEO - DOUBLE SHASA LIMITED</p>
             </div>
           </SwiperSlide>
 
@@ -42,15 +42,15 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-gradient-to-r from-green-400 to-green-600 text-white rounded-lg shadow-lg">
               <img
-                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                src={assets.avatar2}
                 alt="Bilhah Cheruiyot"
                 className="w-24 h-24 rounded-full mb-4 border-4 border-white"
               />
               <p className="text-lg mb-4 italic">
                 “Working with Metamind Limited has been a game changer for our startup. They provided us with cutting-edge tech solutions that are scalable and reliable. The support team is always available to help us navigate any challenges. Truly a top-notch service!"”
               </p>
-              <p className="font-semibold">Mike.T</p>
-              <p className="text-sm">Founder & CEO</p>
+              <p className="font-semibold">Hillary Kelum </p>
+              <p className="text-sm">Founder & CEO - Safari Nurse Agency</p>
             </div>
           </SwiperSlide>
 
@@ -58,14 +58,14 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-gradient-to-r from-purple-400 to-purple-600 text-white rounded-lg shadow-lg">
               <img
-                src="/src/assets/assets_frontend/avatarmeta.jpg"
-                alt="Kimutai Emmanuel"
+                src={assets.avatar3}
+                alt="Emma Joyce"
                 className="w-24 h-24 rounded-full mb-4 border-4 border-white"
               />
               <p className="text-lg mb-4 italic">
                 “Metamind’s Limited expertise in cybersecurity has given us peace of mind. Their tailored solutions protect our sensitive data and keep us compliant with regulations. The team is professional and attentive to our needs. Couldn't ask for a better partner!”
               </p>
-              <p className="font-semibold">Emma J.</p>
+              <p className="font-semibold">Emma Joyce.</p>
               <p className="text-sm">IT Director</p>
             </div>
           </SwiperSlide>
@@ -74,15 +74,15 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-gradient-to-r from-red-400 to-red-600 text-white rounded-lg shadow-lg">
               <img
-                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                src={assets.avatar4}
                 alt="Agatha Mwikali"
                 className="w-24 h-24 rounded-full mb-4 border-4 border-white"
               />
               <p className="text-lg mb-4 italic">
                 “We turned to Metamind Limited for our cloud migration, and it was one of the best decisions we made. They handled everything seamlessly and ensured minimal downtime. The transition was smooth, and our team is now more efficient than ever!”
               </p>
-              <p className="font-semibold">David K.</p>
-              <p className="text-sm">IT Manager</p>
+              <p className="font-semibold">Agatha Mwikali</p>
+              <p className="text-sm">Business Woman</p>
             </div>
           </SwiperSlide>
 
@@ -90,33 +90,20 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="flex flex-col items-center p-6 bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-lg shadow-lg">
               <img
-                src="/src/assets/assets_frontend/avatarmeta.jpg"
+                src={assets.avatar5}
                 alt="Jared Ouma"
                 className="w-24 h-24 rounded-full mb-4 border-4 border-white"
               />
               <p className="text-lg mb-4 italic">
-                “Metaminde’s customer support is exceptional! They are always quick to respond and provide solutions that fit our unique requirements. Their proactive approach has helped us stay ahead in the ever-evolving tech landscape."”
+                “Metamind’s customer support is exceptional! They are always quick to respond and provide solutions that fit our unique requirements. Their proactive approach has helped us stay ahead in the ever-evolving tech landscape."”
               </p>
-              <p className="font-semibold">Jessica M.</p>
+              <p className="font-semibold">Jared Ouma.</p>
               <p className="text-sm">Business Analyst</p>
             </div>
           </SwiperSlide>
 
           {/* Slide 6 */}
-          <SwiperSlide>
-            <div className="flex flex-col items-center p-6 bg-gradient-to-r from-teal-400 to-teal-600 text-white rounded-lg shadow-lg">
-              <img
-                src="/src/assets/assets_frontend/avatarmeta.jpg"
-                alt="Makena Mwanga"
-                className="w-24 h-24 rounded-full mb-4 border-4 border-white"
-              />
-              <p className="text-lg mb-4 italic">
-                “I can't recommend Metaminde enough! Their team designed a custom software solution that perfectly meets our needs. The quality of their work is impressive, and their commitment to client satisfaction is evident. Thank you, Metaminde!”
-              </p>
-              <p className="font-semibold"> Alan R.</p>
-              <p className="text-sm">Product Owner</p>
-            </div>
-          </SwiperSlide>
+          
         </Swiper>
       </div>
     </div>
