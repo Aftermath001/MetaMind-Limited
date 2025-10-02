@@ -4,24 +4,34 @@ import { motion } from "framer-motion";
 const ServicesPage = () => {
   const services = [
     {
-      title: "Real Estate",
+      title: "Custom Website Design & Development",
       description:
-        "We partner with real estate and construction teams ready to move beyond spreadsheets, delays, and rising costs. Our custom-built solutions streamline project management, cost tracking, and team collaboration—designed to fit your exact workflow.",
+        "Professional, mobile-responsive websites tailored to your brand and business goals in Kenya.",
     },
     {
-      title: "Healthcare",
+      title: "E-commerce Solutions",
       description:
-        "Revolutionize patient care with tailored software and mobile apps. We help healthcare providers elevate patient experiences, simplify operations, and drive better health outcomes through innovative technology.",
+        "Build powerful online stores with secure payment gateways (including M-Pesa integration) for the Kenyan market.",
     },
     {
-      title: "Education",
+      title: "Web Application Development",
       description:
-        "Our custom app development empowers modern learning with flexible, accessible solutions. By integrating AI and gamification, we help educators boost engagement, retention, and student success.",
+        "Develop custom web apps, portals, and platforms to streamline your operations or offer unique services.",
     },
     {
-      title: "Finance & Logistics",
+      title: "UI/UX Design",
       description:
-        "We develop secure, high-performance software for banks and fintech companies worldwide. Our solutions enhance operational efficiency, reliability, and user experience—keeping your business agile and competitive in a dynamic market.Our custom software gives logistics teams complete visibility across operations—from vehicle tracking and inventory scanning to full end-to-end supply chain management. Stay connected, efficient, and in control.",
+        "User-centric designs focusing on intuitive navigation and engaging experiences for your target audience.",
+    },
+    {
+      title: "API Development & Integration",
+      description:
+        "Connect your systems, automate workflows, and integrate third-party services seamlessly.",
+    },
+    {
+      title: "Website Maintenance & Support",
+      description:
+        "Ongoing support, updates, and security to keep your website running smoothly and securely.",
     },
   ];
 
@@ -46,15 +56,14 @@ const ServicesPage = () => {
   };
 
   return (
-    <div className="py-12 ">
+    <div className="py-12 bg-tertiary dark:bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-primary mb-8">
-          We Provide IT Services to Various Industries
+        <h2 className="text-3xl font-bold text-center text-primary dark:text-tertiary mb-8">
+          Our Web & Software Services
         </h2>
 
-        {/* Container for animated cards */}
         <motion.div
-          className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
+          className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3"
           variants={containerVariant}
           initial="hidden"
           animate="visible"
@@ -62,13 +71,15 @@ const ServicesPage = () => {
           {services.map((service, index) => (
             <motion.div
               key={index}
-              className="bg-tertiary rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
               variants={itemVariant}
             >
-              <h3 className="text-xl font-semibold mb-3 text-secondary">
+              <h3 className="text-xl font-semibold mb-3 text-secondary dark:text-gold">
                 {service.title}
               </h3>
-              <p className="text-gray-600">{service.description}</p>
+              <p className="text-gray-600 dark:text-gray-400">
+                {service.description}
+              </p>
             </motion.div>
           ))}
         </motion.div>
