@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const ServicesPage = () => {
   const services = [
@@ -27,7 +28,7 @@ const ServicesPage = () => {
       },
     },
     {
-      title: "IT and Digital Transformation",
+      title: "IT & Digital Transformation",
       description:
         "We help businesses leverage technology to improve efficiency, enhance customer experiences, and drive innovation. Our services include IT strategy, digital transformation, and cybersecurity.",
       benefits: [
@@ -65,8 +66,10 @@ const ServicesPage = () => {
       ],
       caseStudy: {
         challenge: "Inefficient financial management.",
-        solution: "Conducted financial analysis and implemented a new financial strategy.",
-        result: "Improved cash flow management and increased profitability by 20%.",
+        solution:
+          "Conducted financial analysis and implemented a new financial strategy.",
+        result:
+          "Improved cash flow management and increased profitability by 20%.",
       },
     },
     {
@@ -188,10 +191,7 @@ const ServicesPage = () => {
               </h4>
               <ul className="list-disc list-inside mb-4">
                 {service.benefits.map((benefit, i) => (
-                  <li
-                    key={i}
-                    className="text-gray-600 dark:text-gray-400"
-                  >
+                  <li key={i} className="text-gray-600 dark:text-gray-400">
                     {benefit}
                   </li>
                 ))}
@@ -202,10 +202,7 @@ const ServicesPage = () => {
               </h4>
               <ul className="list-disc list-inside mb-4">
                 {service.process.map((step, i) => (
-                  <li
-                    key={i}
-                    className="text-gray-600 dark:text-gray-400"
-                  >
+                  <li key={i} className="text-gray-600 dark:text-gray-400">
                     {step}
                   </li>
                 ))}
@@ -264,21 +261,18 @@ const ServicesPage = () => {
 
                 <ul className="mb-6 space-y-2">
                   {plan.features.map((feature, i) => (
-                    <li
-                      key={i}
-                      className="text-gray-600 dark:text-gray-300"
-                    >
+                    <li key={i} className="text-gray-600 dark:text-gray-300">
                       {feature}
                     </li>
                   ))}
                 </ul>
 
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-block bg-secondary dark:bg-gold text-white dark:text-primary px-6 py-3 rounded-lg hover:bg-gold dark:hover:bg-secondary transition duration-300"
                 >
                   Get Started
-                </a>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
