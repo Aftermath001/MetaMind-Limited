@@ -20,8 +20,10 @@ const ServicesPage = () => {
       ],
       caseStudy: {
         challenge: "ABC Corp needed a new market entry strategy.",
-        solution: "We conducted market research, developed a strategic plan, and assisted in execution.",
-        result: "ABC Corp successfully entered a new market, increasing revenue by 30%.",
+        solution:
+          "We conducted market research, developed a strategic plan, and assisted in execution.",
+        result:
+          "ABC Corp successfully entered a new market, increasing revenue by 30%.",
       },
     },
     {
@@ -42,7 +44,8 @@ const ServicesPage = () => {
       caseStudy: {
         challenge: "Outdated IT infrastructure.",
         solution: "Developed and executed a digital transformation strategy.",
-        result: "Increased operational efficiency by 25% and improved customer satisfaction.",
+        result:
+          "Increased operational efficiency by 25% and improved customer satisfaction.",
       },
     },
     {
@@ -84,8 +87,44 @@ const ServicesPage = () => {
       caseStudy: {
         challenge: "Inefficient supply chain management.",
         solution: "Optimized the supply chain and implemented Lean practices.",
-        result: "Reduced operational costs by 15% and improved supply chain efficiency.",
+        result:
+          "Reduced operational costs by 15% and improved supply chain efficiency.",
       },
+    },
+  ];
+
+  const pricing = [
+    {
+      title: "Basic Website",
+      price: "30,000 KES",
+      features: [
+        "Up to 5 pages",
+        "Responsive design",
+        "Basic SEO setup",
+        "Contact form integration",
+      ],
+    },
+    {
+      title: "Business Website",
+      price: "65,000 KES",
+      features: [
+        "Up to 10 pages",
+        "Custom design",
+        "SEO optimization",
+        "Blog setup",
+        "1 Month free support",
+      ],
+    },
+    {
+      title: "Online systems",
+      price: "80,000 KES",
+      features: [
+        "Product catalog & cart",
+        "Payment gateway integration",
+        "Order management system",
+        "SEO optimization",
+        "3 Months free support",
+      ],
     },
   ];
 
@@ -102,20 +141,29 @@ const ServicesPage = () => {
 
   const itemVariant = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   return (
     <div className="py-12 bg-tertiary dark:bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Services Section */}
         <h2 className="text-3xl font-bold text-center text-primary dark:text-tertiary mb-8">
           Our Services
         </h2>
         <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-12">
-          Welcome to Metamind's Services page. We offer a range of specialized consultancy services designed to help your business thrive in today's competitive market. Our expert team provides strategic insights, innovative solutions, and practical guidance tailored to your unique needs. Explore our services below to discover how we can drive your business success.
+          Welcome to Metamind's Services page. We offer a range of specialized
+          consultancy services designed to help your business thrive in today's
+          competitive market. Our expert team provides strategic insights,
+          innovative solutions, and practical guidance tailored to your unique
+          needs. Explore our services below to discover how we can drive your
+          business success.
         </p>
 
-        {/* Container for animated service cards */}
         <motion.div
           className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4"
           variants={containerVariant}
@@ -131,33 +179,122 @@ const ServicesPage = () => {
               <h3 className="text-xl font-semibold mb-3 text-secondary dark:text-gold">
                 {service.title}
               </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">{service.description}</p>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {service.description}
+              </p>
 
-              <h4 className="font-semibold text-secondary dark:text-gold">Benefits:</h4>
+              <h4 className="font-semibold text-secondary dark:text-gold">
+                Benefits:
+              </h4>
               <ul className="list-disc list-inside mb-4">
                 {service.benefits.map((benefit, i) => (
-                  <li key={i} className="text-gray-600 dark:text-gray-400">{benefit}</li>
+                  <li
+                    key={i}
+                    className="text-gray-600 dark:text-gray-400"
+                  >
+                    {benefit}
+                  </li>
                 ))}
               </ul>
 
-              <h4 className="font-semibold text-secondary dark:text-gold">Process:</h4>
+              <h4 className="font-semibold text-secondary dark:text-gold">
+                Process:
+              </h4>
               <ul className="list-disc list-inside mb-4">
                 {service.process.map((step, i) => (
-                  <li key={i} className="text-gray-600 dark:text-gray-400">{step}</li>
+                  <li
+                    key={i}
+                    className="text-gray-600 dark:text-gray-400"
+                  >
+                    {step}
+                  </li>
                 ))}
               </ul>
-
-              {/* <h4 className="font-semibold text-secondary dark:text-gold">Case Study:</h4>
-              <p className="text-gray-600 dark:text-gray-400 mb-1"><strong>Challenge:</strong> {service.caseStudy.challenge}</p>
-              <p className="text-gray-600 dark:text-gray-400 mb-1"><strong>Solution:</strong> {service.caseStudy.solution}</p>
-              <p className="text-gray-600 dark:text-gray-400"><strong>Result:</strong> {service.caseStudy.result}</p> */}
             </motion.div>
           ))}
         </motion.div>
 
-        <div className="text-center mt-12">
-          <h3 className="text-2xl font-bold text-primary dark:text-tertiary mb-4">Ready to Transform Your Business?</h3>
-          <p className="text-gray-700 dark:text-gray-300 mb-6">Contact us today to learn more about how Metamind can help you achieve your goals. Whether you need strategic guidance, technological innovation, financial optimization, or operational efficiency, our team of experts is here to assist you.</p>
+        {/* Pricing Section */}
+        <div className="mt-20">
+          <h2 className="text-3xl font-bold text-center text-primary dark:text-tertiary mb-8">
+            Website Pricing
+          </h2>
+          <motion.div
+            className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+            variants={containerVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            {pricing.map((plan, index) => (
+              <motion.div
+                key={index}
+                className="relative bg-white dark:bg-gray-800 rounded-xl shadow-md p-8 hover:shadow-xl transition duration-300 text-center"
+                variants={itemVariant}
+              >
+                {/* Offer label for Basic Website */}
+                {plan.title === "Basic Website" && (
+                  <span className="absolute top-4 right-4 bg-red-500 text-white text-sm font-bold px-3 py-1 rounded-full shadow">
+                    Offer until Nov 30
+                  </span>
+                )}
+
+                <h3
+                  className={`text-2xl font-semibold text-secondary dark:text-gold mb-4 ${
+                    plan.title === "Basic Website" ? "mt-6" : ""
+                  }`}
+                >
+                  {plan.title}
+                </h3>
+
+                {/* Show discounted price if Basic Website */}
+                {plan.title === "Basic Website" ? (
+                  <div className="mb-6">
+                    <p className="text-lg text-gray-500 line-through">
+                      35,000 KES
+                    </p>
+                    <p className="text-4xl font-bold text-primary dark:text-tertiary">
+                      30,000 KES
+                    </p>
+                  </div>
+                ) : (
+                  <p className="text-4xl font-bold text-primary dark:text-tertiary mb-6">
+                    {plan.price}
+                  </p>
+                )}
+
+                <ul className="mb-6 space-y-2">
+                  {plan.features.map((feature, i) => (
+                    <li
+                      key={i}
+                      className="text-gray-600 dark:text-gray-300"
+                    >
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <a
+                  href="/contact"
+                  className="inline-block bg-secondary dark:bg-gold text-white dark:text-primary px-6 py-3 rounded-lg hover:bg-gold dark:hover:bg-secondary transition duration-300"
+                >
+                  Get Started
+                </a>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+
+        {/* CTA */}
+        <div className="text-center mt-20">
+          <h3 className="text-2xl font-bold text-primary dark:text-tertiary mb-4">
+            Ready to Transform Your Business?
+          </h3>
+          <p className="text-gray-700 dark:text-gray-300 mb-6">
+            Contact us today to learn more about how Metamind can help you
+            achieve your goals. Whether you need strategic guidance,
+            technological innovation, financial optimization, or operational
+            efficiency, our team of experts is here to assist you.
+          </p>
           <a
             href="mailto:contact@metamind.com"
             className="bg-secondary dark:bg-gold text-white dark:text-primary px-6 py-3 rounded-md hover:bg-gold dark:hover:bg-secondary transition duration-300"
