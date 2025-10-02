@@ -28,7 +28,7 @@ const ServicesPage = () => {
       },
     },
     {
-      title: "IT and Digital Transformation",
+      title: "IT & Digital Transformation",
       description:
         "We help businesses leverage technology to improve efficiency, enhance customer experiences, and drive innovation. Our services include IT strategy, digital transformation, and cybersecurity.",
       benefits: [
