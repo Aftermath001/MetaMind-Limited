@@ -1,4 +1,3 @@
-// Banner.jsx
 import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets_frontend/assets";
 import { motion } from "framer-motion";
@@ -23,21 +22,21 @@ const Banner = () => {
 
   return (
     <motion.div
-      className="relative w-full h-[500px] md:h-[600px] lg:h-[400px] overflow-hidden rounded-lg flex items-center justify-between px-4 md:px-16"
+      className="relative w-full h-[500px] md:h-[600px] lg:h-[400px] overflow-hidden rounded-lg flex flex-col md:flex-row items-center justify-between px-4 md:px-16 bg-tertiary dark:bg-primary"
       initial="hidden"
       animate="visible"
     >
       {/* Aurora Background */}
       <Aurora
-        colorStops={["#3A29FF", "#FF94B4", "#FF3232"]}
-        blend={0.5}
-        amplitude={1.0}
-        speed={0.5}
+        colorStops={["#000000", "#B8860B", "#FFD700", "#FFFFFF"]}
+        blend={0.7}
+        amplitude={1.3}
+        speed={0.45}
       />
 
       {/* Left Side Content */}
       <motion.div
-        className="flex-1 z-10 py-8 sm:py-10 md:py-16"
+        className="flex-1 z-10 py-8 sm:py-10 md:py-16 text-center md:text-left"
         variants={textVariant}
       >
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-semibold text-primary dark:text-tertiary">
@@ -49,7 +48,7 @@ const Banner = () => {
             navigate("/contact");
             scrollTo(0, 0);
           }}
-          className="flex items-center gap-2 bg-secondary px-8 py-3 rounded-full text-primary text-sm m-auto md:m-0 mt-6"
+          className="flex items-center justify-center md:justify-start gap-2 bg-secondary text-primary px-8 py-3 rounded-full text-sm mt-6 hover:bg-yellow-400 transition"
           variants={buttonVariant}
           whileHover="hover"
         >
@@ -57,17 +56,16 @@ const Banner = () => {
         </motion.button>
       </motion.div>
 
-      {/* Right Side Image (Optional) */}
+      {/* Right Side Image */}
       <motion.div
-        className="hidden md:block md:w-1/2 lg:w-[370px] relative z-10"
+        className="relative z-10 flex justify-center items-center md:w-1/2 lg:w-[250px] h-full"
         variants={imageVariant}
       >
-        {/* Uncomment if image is needed */}
-        {/* <img
-          className="w-full absolute bottom-0 right-0 max-w-md"
+        <img
           src={assets.appointment_img}
           alt="appointment img"
-        /> */}
+          className="object-contain h-full w-auto max-w-full"
+        />
       </motion.div>
     </motion.div>
   );

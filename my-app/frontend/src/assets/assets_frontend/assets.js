@@ -2,7 +2,7 @@ import appointment_img from "./android-3084516_1920-removebg-preview.png";
 import header_img from "./cyber-brain-7633488_1920-removebg-preview.png";
 import group_profiles from "./group_profiles.png";
 import profile_pic from "./profile_pic.png";
-import contact_image from "./android-3084516_1920-removebg-preview.png";
+import contact_image from "./customer-support.jpg";
 import backgroundImage1 from '../assets_frontend/airplane-plane.jpg'
 import about_image from "./aboutMed.jpg";
 import logo from "./MetaMindLogo.jpeg";
