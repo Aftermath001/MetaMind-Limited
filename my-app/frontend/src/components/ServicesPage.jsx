@@ -4,29 +4,29 @@ import { motion } from "framer-motion";
 const ServicesPage = () => {
   const services = [
     {
-      title: "Custom Website Design & Development",
+      title: "Customer Support AI Agent",
       description:
-        "Professional, mobile-responsive websites tailored to your brand and business goals in Kenya.",
+        "Answers customer inquiries instantly, Works on website, WhatsApp, and email, Reduces support workload",
     },
     {
-      title: "E-commerce Solutions",
+      title: "Sales AI Agent",
       description:
-        "Build powerful online stores with secure payment gateways (including M-Pesa integration) for the Kenyan market.",
+        "Qualifies leads automatically,Schedules meetings, Sends automated follow-ups",
     },
     {
-      title: "Web Application Development",
+      title: "Operations AI Agent",
       description:
-        "Develop custom web apps, portals, and platforms to streamline your operations or offer unique services.",
+        "Automates repetitive business tasks, Integrates with CRM and internal tools, Improves productivity",
     },
     {
-      title: "UI/UX Design",
+      title: ". Appointment Booking Agent",
       description:
-        "User-centric designs focusing on intuitive navigation and engaging experiences for your target audience.",
+        "schedule meetings,send reminders, cancel/reschedule bookings",
     },
     {
-      title: "API Development & Integration",
+      title: "HR Assistant Agent",
       description:
-        "Connect your systems, automate workflows, and integrate third-party services seamlessly.",
+        "Answers HR questions, handles onboarding info, and integrate third-party services seamlessly.",
     },
     {
       title: "Website Maintenance & Support",
@@ -59,7 +59,7 @@ const ServicesPage = () => {
     <div className="py-12 bg-tertiary dark:bg-primary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-center text-primary dark:text-tertiary mb-8">
-          Our Web & Software Services
+        AI Agent Solutions & Services
         </h2>
 
         <motion.div

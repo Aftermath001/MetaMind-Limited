@@ -52,7 +52,7 @@ const Banner = () => {
           variants={buttonVariant}
           whileHover="hover"
         >
-          Contact Us
+          See Our AI Agents
         </motion.button>
       </motion.div>
 
