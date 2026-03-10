@@ -32,22 +32,21 @@ const Header = () => {
         variants={textVariant}
       >
         <motion.p className='text-3xl md:text-4xl lg:text-5xl text-tertiary font-semibold leading-tight'>
-          METAMIND <br /> LIMITED
+        MetaMind – AI Automation & <br /> Intelligent Agents for Businesses
         </motion.p>
         <motion.div className='flex flex-col md:flex-row items-center gap-3 text-tertiary text-sm font-light'>
           <p>
-            At Metamind, we are dedicated to helping businesses navigate complex challenges and achieve sustainable growth through personalized and impactful solutions.
+          MetaMind builds intelligent AI agents that automate customer support, sales, and internal operations, helping businesses operate faster, smarter, and 24/7.
           </p>
         </motion.div>
-        <motion.div
-  className='flex items-center gap-2 bg-secondary px-8 py-3 rounded-full text-primary text-sm m-auto md:m-0'
-  whileHover="hover"
-  variants={buttonVariant}
->
-  <Link to="/contact" className="flex items-center gap-2">
-    Book Appointment Here<img className='w-3' src={assets.arrow_icon} alt='arrow-icon'/>
-  </Link>
-        </motion.div>
+        <motion.a 
+          className='flex items-center gap-2 bg-secondary px-8 py-3 rounded-full text-primary text-sm m-auto md:m-0'
+          href='/contact'
+          whileHover="hover"
+          variants={buttonVariant}
+        >
+          Book a Demo <img className='w-3' src={assets.arrow_icon} alt='arrow-icon'/>
+        </motion.a>
       </motion.div>
 
       {/* Right Side */}
