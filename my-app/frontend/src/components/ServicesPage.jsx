@@ -11,7 +11,7 @@ const ServicesPage = () => {
     {
       title: "Sales AI Agent",
       description:
-        "Qualifies leads automatically,Schedules meetings, Sends automated follow-ups",
+        "Qualifies leads automatically, Schedules meetings, Sends automated follow-ups",
     },
     {
       title: "Operations AI Agent",
@@ -21,12 +21,12 @@ const ServicesPage = () => {
     {
       title: ". Appointment Booking Agent",
       description:
-        "schedule meetings,send reminders, cancel/reschedule bookings",
+        "Schedule meetings, Send reminders, Cancel/reschedule bookings",
     },
     {
       title: "HR Assistant Agent",
       description:
-        "Answers HR questions, handles onboarding info, and integrate third-party services seamlessly.",
+        "Answers HR questions, Handles onboarding info, Integrate third-party services seamlessly.",
     },
     {
       title: "Website Maintenance & Support",
